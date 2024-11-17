@@ -41,7 +41,7 @@ def parse_m3u8(contents, m3u8_dict):
             channel_name = value.split(",")[-1].strip()
             if channel_name:
                 m3u8_dict[key] = {
-                    "info": value+" -VPN: "+C,
+                    "info": value+" VPN:"+C,
                     "channel_name": channel_name
                 }
     return m3u8_dict
