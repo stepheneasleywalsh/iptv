@@ -1,7 +1,7 @@
 import requests
 global country
 
-country = "UK" # SET VPN
+country = "US" # SET VPN
 
 class Colors:
     RED = '\033[31m'
@@ -46,10 +46,11 @@ def parse_m3u8(contents, m3u8_dict):
     return m3u8_dict
 
 def is_m3u8_stream_live(url):
-    with open("playlistIE.m3u8", 'r') as file:
-        checked = file.read()
-    if url in checked:
-        return False
+    for p in ["playlistIE.m3u8", "playlistUK.m3u8"]:
+        with open(p, 'r') as file:
+            checked = file.read()
+        if url in checked:
+            return False
     if ".m3u" in url.lower() or ".ts" in url.lower() or ".mpd" in url.lower():
         try:
             response = requests.get(url, timeout=10)
