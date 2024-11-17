@@ -1,1 +1,129 @@
-
+#EXTM3U
+#EXTINF:-1 tvg-id="30ARidiculousTV.us" tvg-logo="https://30a.media/wp-content/uploads/2023/08/pzaz-30atv-2-230x366-ridiculous.jpg" group-title="Comedy",30A Ridiculous TV (720p) VPN:None
+https://30a-tv.com/feeds/720p/63.m3u8
+#EXTINF:-1 tvg-id="981PearlFM.sx" tvg-logo="https://i.imgur.com/GY750xh.jpg" group-title="Music",98.1 Pearl FM (720p) VPN:None
+https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
+#EXTINF:-1 tvg-id="ABNAfrica.us" tvg-logo="https://yt3.googleusercontent.com/BhFbqwxiQN89UGI2cpoffye2UuKtblDDUwJHce0fzjpdrMkb0CtKf_42ZVTiLX2Ulwbjey4YZQ=s512-c-k-c0x00ffffff-no-rj" group-title="Religious",ABN Africa (480p) VPN:None
+https://mediaserver.abnvideos.com/streams/abnafrica.m3u8
+#EXTINF:-1 tvg-id="ABNBibleMoviesChannel.us" tvg-logo="https://i.imgur.com/NCqZdaL.png" group-title="Movies;Religious",ABN Bible Movies (720p) VPN:None
+https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
+#EXTINF:-1 tvg-id="ACTV.us" tvg-logo="https://i.imgur.com/Z6lB0Ww.png" group-title="Legislative",ACTV VPN:None
+https://castus-vod-dev.s3.amazonaws.com/vod_clients/athens/live/ch2/video.m3u8
+#EXTINF:-1 tvg-id="AfghanistanInternational.uk" tvg-logo="https://i.imgur.com/r8MmFRX.png" group-title="News",Afghanistan International (720p) VPN:None
+https://hls.afintl.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Akaku53.us" tvg-logo="https://www.akaku.org/wp-content/uploads/bb-plugin/cache/Channel53-147x150-square.png" group-title="General",Akaku 53 (Hawaii) (1080p) VPN:None
+https://castus-vod-dev.s3.amazonaws.com/vod_clients/akaku/live/ch1/video.m3u8
+#EXTINF:-1 tvg-id="Akaku54.us" tvg-logo="https://www.akaku.org/wp-content/uploads/bb-plugin/cache/Channel54-147x150-square.png" group-title="General",Akaku 54 (Hawaii) (1080p) VPN:None
+https://castus-vod-dev.s3.amazonaws.com/vod_clients/akaku/live/ch2/video.m3u8
+#EXTINF:-1 tvg-id="Akaku55.us" tvg-logo="https://www.akaku.org/wp-content/uploads/bb-plugin/cache/Channel55-147x150-square.png" group-title="General",Akaku 55 (Hawaii) (1080p) VPN:None
+https://castus-vod-dev.s3.amazonaws.com/vod_clients/akaku/live/ch3/video.m3u8
+#EXTINF:-1 tvg-id="AlphaDigital.ug" tvg-logo="https://i.imgur.com/ZlMARQx.jpg" group-title="Religious",Alpha Digital (480p) VPN:None
+http://streamfi-alphadgtl1.zettawiseroutes.com:8080/hls/stream_src.m3u8
+#EXTINF:-1 tvg-id="ANC.ph" tvg-logo="https://i.imgur.com/odwRbRk.png" group-title="News",ANC (720p) VPN:None
+https://ancglobal-abscbn-ono.amagi.tv/playlist720_p.m3u8
+#EXTINF:-1 tvg-id="AtomicTV.ro" tvg-logo="https://i.imgur.com/O4uI0Uy.png" group-title="Music",Atomic TV (360p) VPN:None
+https://atomic.streamnet.ro/atomictv.m3u8
+#EXTINF:-1 tvg-id="aurLifeHD.pk" tvg-logo="https://i.imgur.com/GfWLn3O.jpg" group-title="General",aurLife HD (614p) VPN:None
+http://124.109.47.101/hls/stream1.m3u8
+#EXTINF:-1 tvg-id="AXSTVNOW.us" tvg-logo="https://i.imgur.com/lYa793q.png" group-title="Documentary",AXS TV NOW VPN:None
+https://dikcfc9915kp8.cloudfront.net/hls/1080p/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Asian Network" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcasiannet-epg.png" tvg-id="BBCRadioAsianNetwork.uk" group-title="UK",BBC Asian Network VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_asian_network/bbc_asian_network.isml/bbc_asian_network-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 1" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1-epg.png" tvg-id="BBCRadio1.uk" group-title="UK",BBC Radio 1 VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one/bbc_radio_one.isml/bbc_radio_one-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 1Xtra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1x-epg.png" tvg-id="BBCRadio1Xtra.uk" group-title="UK",BBC Radio 1Xtra VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 2" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd2-epg.png" tvg-id="BBCRadio2.uk" group-title="UK",BBC Radio 2 VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 3" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd3-epg.png" tvg-id="BBCRadio3.uk" group-title="UK",BBC Radio 3 VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_three/bbc_radio_three.isml/bbc_radio_three-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 4" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4-epg.png" tvg-id="BBCRadio4FM.uk" group-title="UK",BBC Radio 4 VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 4 Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4x-epg.png" tvg-id="BBCRadio4Extra.uk" group-title="UK",BBC Radio 4 Extra VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_four_extra/bbc_radio_four_extra.isml/bbc_radio_four_extra-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 5 Live" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5l-epg.png" tvg-id="BBCRadio5Live.uk" group-title="UK",BBC Radio 5 Live VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_five_live/bbc_radio_five_live.isml/bbc_radio_five_live-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 6 Music" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd6-epg.png" tvg-id="BBCRadio6Music.uk" group-title="UK",BBC Radio 6 Music VPN:None
+http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8
+#EXTINF:-1 tvg-id="CVCEducation.us" tvg-logo="https://i.imgur.com/tUgEAUJ.png" group-title="Education",Bolton Community Voice Channel (CVC) Education (Bolton CT) (480p) VPN:None
+https://s3-us-west-2.amazonaws.com/bolton.castus-vod/live/ch2/video.m3u8
+#EXTINF:-1 tvg-id="CVCGovernment.us" tvg-logo="https://i.imgur.com/qLJhNhq.png" group-title="Legislative",Bolton Community Voice Channel (CVC) Government (Bolton CT) (480p) VPN:None
+https://s3-us-west-2.amazonaws.com/bolton.castus-vod/live/ch3/video.m3u8
+#EXTINF:-1 tvg-id="CVCPublic.us" tvg-logo="https://i.imgur.com/KiTtkBQ.png" group-title="General",Bolton Community Voice Channel (CVC) Public (Bolton CT) (480p) VPN:None
+https://s3-us-west-2.amazonaws.com/bolton.castus-vod/live/ch1/video.m3u8
+#EXTINF:-1 tvg-id="Bridezillas.uk" tvg-logo="https://i.imgur.com/gppwrJa.png" group-title="Lifestyle",Bridezillas VPN:None
+https://run-br-uk.otteravision.com/run/br_uk/br_uk_720.m3u8
+#EXTINF:-1 tvg-id="CCCOAspireTV.ug" tvg-logo="https://i.imgur.com/33FHk1A.jpg" group-title="Religious",CCCO Aspire TV (676p) VPN:None
+https://panel.freedomflixtv.org:3948/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="ScottsdaleChannel11.us" tvg-logo="https://i.imgur.com/lfE6Q9i.png" group-title="General",Channel 11 (Scottsdale AZ) VPN:None
+https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/scottsdale/G0040_007/chunklist.m3u8
+#EXTINF:-1 tvg-id="CNNGO.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN GO VPN:None
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+#EXTINF:-1 tvg-id="CNNINT.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN INT VPN:None
+https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Disney_Channel_logo_%282014%29.svg/512px-Disney_Channel_logo_%282014%29.svg.png" group-title="Kids",Disney Channel VPN:None
+http://109.233.89.170/Disney_Channel/mono.m3u8
+#EXTINF:-1 tvg-id="FightBox.nl" tvg-logo="https://i.imgur.com/mRsnztA.png" group-title="Sports",FightBox VPN:None
+http://stream01.vnet.am/Fightbox/mono.m3u8
+#EXTINF:-1 tvg-id="FORTTV.ug" tvg-logo="https://i.ibb.co/4KN5zW9/fort-tv-logo-GENE.png" group-title="Entertainment",Fort TV (480p) VPN:None
+http://fort.co-works.org:8080/hls/live.stream.m3u8
+#EXTINF:-1 tvg-id="France24English.fr" tvg-logo="https://i.imgur.com/B76eSg2.png" group-title="News",France 24 English (1080p) VPN:None
+http://n1.klowdtv.net/live2/france24_720p/chunks.m3u8
+#EXTINF:-1 tvg-id="FreedomExperienceTV.ug" tvg-logo="https://i.imgur.com/1SiJpPy.png" group-title="Religious",Freedom Experience TV (720p) VPN:None
+https://panel.freedomflixtv.org:3934/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="FreedomLoveZoneTV.ug" tvg-logo="https://i.imgur.com/PmbLsTk.jpg" group-title="Entertainment",Freedom Love Zone TV (720p) VPN:None
+https://panel.freedomflixtv.org:3665/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="FreedomMovieSphere.ug" tvg-logo="https://i.imgur.com/jEyrlPp.jpg" group-title="Movies",Freedom Movie Sphere (720p) VPN:None
+https://panel.freedomflixtv.org:3311/stream/play.m3u8
+#EXTINF:-1 tvg-id="FX2.fr" tvg-logo="https://www.lyngsat.com/logo/tv/ff/fx-2-fr.png" group-title="Entertainment",FX2 Farsi VPN:None
+https://toonixhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GHtvHolland.nl" tvg-logo="https://i.imgur.com/hOGS5LL.png" group-title="General",GHtv Holland (720p) VPN:None
+http://37.48.120.77:8080/hls/ghtvonline.m3u8
+#EXTINF:-1 tvg-id="Go2Travel.us" tvg-logo="https://go2travel.tv/wp-content/uploads/2022/11/go2-logo.png" group-title="Travel",Go2Travel (1080p) VPN:None
+https://go2thls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GrandCinema.tr" tvg-logo="https://www.lyngsat.com/logo/tv/gg/grand-cinema.png" group-title="Movies",Grand Cinema VPN:None
+https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GreatCommissionTV.ph" tvg-logo="https://i.imgur.com/8cvikOo.png" group-title="Family",Great Commission TV (468p) VPN:None
+http://45.32.115.103/live/livestream/index.m3u8
+#EXTINF:-1 tvg-id="IBNTV.tz" tvg-logo="https://i.imgur.com/hkV51ij.png" group-title="Religious",IBN TV (480p) VPN:None
+http://138.68.138.119:8080/live/5a8993709ea19/index.m3u8
+#EXTINF:-1 tvg-id="IBNTVAfrica.tz" tvg-logo="https://i.imgur.com/eKy2ocd.png" group-title="Religious",IBN TV Africa (720p) VPN:None
+http://68.183.41.209:8080/live/5d9a537c64b9c/index.m3u8
+#EXTINF:-1 tvg-id="KBEV.us" tvg-logo="https://i.imgur.com/YFVrphZ.png" group-title="Education",KBEV Spectrum Channel 6 [Beverly Hills] (1080p) VPN:None
+https://s3-us-west-2.amazonaws.com/beverly-hills-high-school.castus-vod/live/ch1/video.m3u8
+#EXTINF:-1 tvg-id="CityTVLakewood.us" tvg-logo="https://i.imgur.com/e1shzv9.png" group-title="General",Lakewood CityTV (720p) VPN:None
+https://s3-us-west-2.amazonaws.com/lakewood.castus-vod/live/ch1/video.m3u8
+#EXTINF:-1 tvg-id="Live99FM.bq" tvg-logo="https://i.imgur.com/U43UrQT.png" group-title="Music",Live99FM (1080p) VPN:None
+https://media.streambrothers.com:19360/8022/8022.m3u8
+#EXTINF:-1 tvg-id="MaldivesTV.mv" tvg-logo="https://i.imgur.com/Zl2FmFC.png" group-title="Travel",Maldives TV (608p) VPN:None
+https://live.maldivestv.mv/hls/stream/index.m3u8
+#EXTINF:-1 tvg-id="MarvisionTV.bo" tvg-logo="https://i.imgur.com/ce29Mbv.png" group-title="General",Marvisión TV (720p) VPN:None
+https://vdo.grupolimalive.com:3631/live/marvisionlive.m3u8
+#EXTINF:-1 tvg-id="MinimaxCEE.cz" tvg-shift="0" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax (576p) (576p) VPN:None
+http://88.212.15.27/live/test_minimax/playlist.m3u8
+#EXTINF:-1 tvg-id="MNBWorld.mn" tvg-logo="https://i.imgur.com/PHlj84Q.png" group-title="Undefined",MNB World (1080p) VPN:None
+https://live.mnb.mn/hls/mnb_world.stream.m3u8
+#EXTINF:-1 tvg-id="MontrealGreekTV.ca" tvg-logo="https://i.imgur.com/Y5YnUit.png" group-title="Undefined",Montreal Greek TV (480p) VPN:None
+http://live.greektv.ca/hls1/greektv.m3u8
+#EXTINF:-1 tvg-id="MTC.us" tvg-logo="https://i.imgur.com/JxoAR4j.png" group-title="Undefined",MTC (720p) VPN:None
+https://mtchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="MercyandTruthMinistriesTelevision.jm" tvg-logo="https://i.imgur.com/SdYnHBJ.png" group-title="Religious",MTM TV (720p) VPN:None
+https://angel.btbn.tv:5443/mtmtv/streams/live.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th" tvg-logo="https://i.imgur.com/NRO6AtW.png" group-title="Undefined",NBT World (720p) VPN:None
+https://cdn-edge-ott.prd.go.th/live_vlc/smil:2609-b4a6-64b3-1431-5e64/chunklist_w507269531_b2128000.m3u8
+#EXTINF:-1 tvg-id="NCTVChannel14.us" tvg-logo="https://i.imgur.com/sOk4JYr.png" group-title="General",Newington Community Television Channel 14 (Newington CT) (720p) VPN:None
+https://s3-us-west-2.amazonaws.com/newington.castus-vod/live/ch1/video.m3u8
+#EXTINF:-1 tvg-id="NCTVChannel16.us" tvg-logo="https://i.imgur.com/vquPm9I.png" group-title="Legislative",Newington Community Television Channel 16 (Newington CT) (720p) VPN:None
+https://s3-us-west-2.amazonaws.com/newington.castus-vod/live/ch2/video.m3u8
+#EXTINF:-1 tvg-id="PardesiTV.ca" tvg-logo="https://i.imgur.com/CwAdPpZ.jpg" group-title="Undefined",Pardesi TV (720p) VPN:None
+http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="PentTV.gh" tvg-logo="https://i.imgur.com/Jw6d3dR.png" group-title="Undefined",Pent TV (576p) VPN:None
+https://iptv-trans.ecntv.net/live/penttv.m3u8
+#EXTINF:-1 tvg-id="PHXTV.us" tvg-logo="https://i.imgur.com/RkTKR6x.png" group-title="Legislative",PHXTV VPN:None
+https://cdn3.wowza.com/5/bGZUOHp2TnhudnM2/phoenix/G1498_002/chunklist.m3u8
+#EXTINF:-1 tvg-id="POPWorldTV.es" tvg-logo="https://i.imgur.com/LQB6G3s.jpg" group-title="Music",POP World TV (720p) VPN:None
+https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
+#EXTINF:-1 tvg-id="PrudentMedia.in" tvg-logo="https://i.imgur.com/DG0x4UD.png" group-title="News",Prudent Media (1080p) VPN:None
+https://prudentmcdn.rixcast.com/prudentm.m3u8
+#EXTINF:-1 tvg-id="Racingcom.au" tvg-logo="https://i.imgur.com/Q55HX1O.png" group-title="Sports",Racing.com (720p) VPN:None
+https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index1500.m3u8
