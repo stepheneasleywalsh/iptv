@@ -70,6 +70,10 @@ def combine_and_sort_playlists(files, output_file):
         for key, value in sorted_items:
             f.write(f"{value['info']}\n")
             f.write(f"{key}\n")
+################################################################################################################
+
+# combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
+# quit()
 
 m3u8_dict = {}
 
@@ -91,6 +95,3 @@ with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
                 print(f"{Colors.GREEN}{info}\n{key}\n{Colors.RESET}")
             else:
                 print(f"{Colors.RED}{info}\n{key}\n{Colors.RESET}")
-
-
-# combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
