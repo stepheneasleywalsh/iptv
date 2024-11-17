@@ -1,7 +1,7 @@
 import requests
 global country
 
-country = "IE" # SET VPN
+country = "UK" # SET VPN
 
 class Colors:
     RED = '\033[31m'
@@ -47,7 +47,11 @@ def parse_m3u8(contents, m3u8_dict):
     return m3u8_dict
 
 def is_m3u8_stream_live(url):
+    with open("playlistIE.m3u8", 'r') as file:
+        checked = file.read()
     if "m3u" not in url.lower():
+        return False
+    if url in checked:
         return False
     try:
         response = requests.get(url, timeout=10)
@@ -72,9 +76,6 @@ def combine_and_sort_playlists(files, output_file):
             f.write(f"{key}\n")
 ################################################################################################################
 
-# combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
-# quit()
-
 m3u8_dict = {}
 
 for url in urls:
@@ -95,3 +96,8 @@ with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
                 print(f"{Colors.GREEN}{info}\n{key}\n{Colors.RESET}")
             else:
                 print(f"{Colors.RED}{info}\n{key}\n{Colors.RESET}")
+
+try:
+    combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
+except:
+    pass
