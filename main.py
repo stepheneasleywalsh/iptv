@@ -29,6 +29,10 @@ def fetch_page_contents(url):
         return None
 
 def parse_m3u8(contents, m3u8_dict):
+    if country == "IE":
+        C = "None"
+    else:
+        C = country
     lines = contents.splitlines()
     for i in range(len(lines) - 1):
         if lines[i].startswith("#EXTINF:"):
@@ -38,7 +42,7 @@ def parse_m3u8(contents, m3u8_dict):
             if channel_name:
                 m3u8_dict[key] = {
                     "info": value,
-                    "channel_name": channel_name
+                    "channel_name": channel_name+" VPN: "+C
                 }
     return m3u8_dict
 
