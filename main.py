@@ -35,6 +35,8 @@ def parse_m3u8(contents, m3u8_dict):
     return m3u8_dict
 
 def is_m3u8_stream_live(url):
+    if "m3u" not in url.lower():
+        return False
     try:
         response = requests.get(url, timeout=10)
         if response.status_code == 200 and "#EXTM3U" in response.text and "#EXTINF" in response.text:
@@ -59,11 +61,15 @@ with open('playlist.m3u8', 'w', encoding='utf-8') as file:
         info = value["info"]
         if "Not 24/7" not in channel_name:
             if "geo" in info.lower() or "block" in info.lower():
-                print(f"Channel: {channel_name}\n")
+                print(f"MAYBE: {channel_name} {key}")
                 file.write(f"{info}\n{key}\n")
             else:
+                print(f"testing: {channel_name} {key}")
                 if is_m3u8_stream_live(key):
-                    print(f"Channel: {channel_name}\n")
+                    print(f"YES: {channel_name} {key}")
                     file.write(f"{info}\n{key}\n")
                 else:
-                    pass
+                    print(f"NO: {channel_name} {key}")
+        else:
+            print(f"MAYBE: {channel_name} {key}")
+            file.write(f"{info}\n{key}\n")
