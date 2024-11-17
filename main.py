@@ -41,8 +41,8 @@ def parse_m3u8(contents, m3u8_dict):
             channel_name = value.split(",")[-1].strip()
             if channel_name:
                 m3u8_dict[key] = {
-                    "info": value,
-                    "channel_name": channel_name+" VPN: "+C
+                    "info": value+" -VPN: "+C,
+                    "channel_name": channel_name
                 }
     return m3u8_dict
 
@@ -87,10 +87,10 @@ with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
         info = value["info"]
         if "not 24" not in channel_name.lower():
             if is_m3u8_stream_live(key):
-                print(f"{Colors.GREEN} {channel_name} {key} {Colors.RESET}")
                 file.write(f"{info}\n{key}\n")
+                print(f"{Colors.GREEN}{info}\n{key}\n{Colors.RESET}")
             else:
-                print(f"{Colors.RED} {channel_name} {key} {Colors.RESET}")
+                print(f"{Colors.RED}{info}\n{key}\n{Colors.RESET}")
 
 
 # combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
