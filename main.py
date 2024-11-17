@@ -1,7 +1,7 @@
 import requests
 global country
 
-country = "US" # SET VPN
+country = "CA" # <------------------
 
 class Colors:
     RED = '\033[31m'
@@ -40,13 +40,13 @@ def parse_m3u8(contents, m3u8_dict):
             channel_name = value.split(",")[-1].strip()
             if channel_name:
                 m3u8_dict[key] = {
-                    "info": value+" VPN:"+C,
+                    "info": value+" GEO:"+C,
                     "channel_name": channel_name
                 }
     return m3u8_dict
 
 def is_m3u8_stream_live(url):
-    for p in ["playlistIE.m3u8", "playlistUK.m3u8"]:
+    for p in ["playlistIE.m3u8", "playlistUK.m3u8", "playlistUS.m3u8", "playlistCA.m3u8"]: # <------------------
         with open(p, 'r', encoding='utf-8') as file:
             checked = file.read()
             if url in checked:
@@ -62,19 +62,6 @@ def is_m3u8_stream_live(url):
     else:
         return False
 
-
-def combine_and_sort_playlists(files, output_file):
-    combined_dict = {}
-    for file in files:
-        with open(file, 'r', encoding='utf-8') as f:
-            contents = f.read()
-            parse_m3u8(contents, combined_dict)
-    sorted_items = sorted(combined_dict.items(), key=lambda x: x[1]['channel_name'].lower())
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write("#EXTM3U\n")
-        for key, value in sorted_items:
-            f.write(f"{value['info']}\n")
-            f.write(f"{key}\n")
 ################################################################################################################
 
 m3u8_dict = {}
@@ -97,8 +84,3 @@ with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
                 print(f"{Colors.GREEN}{info}\n{key}\n{Colors.RESET}")
             else:
                 print(f"{Colors.RED}{info}\n{key}\n{Colors.RESET}")
-
-try:
-    combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8', 'playlistCA.m3u8'], 'playlist.m3u8')
-except:
-    pass

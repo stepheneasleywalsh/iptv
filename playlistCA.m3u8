@@ -1,1 +1,3 @@
-
+#EXTM3U
+#EXTINF:-1 tvg-name="TVA Ⓖ" tvg-logo="https://i.imgur.com/1GR8Szn.png" group-title="Canada",TVA Ⓖ GEO:CA
+https://tvalive.akamaized.net/hls/live/2012413/tva01/master.m3u8
