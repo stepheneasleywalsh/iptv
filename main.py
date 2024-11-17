@@ -15,7 +15,6 @@ urls = [
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_usa.m3u8",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_ireland.m3u8",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_canada.m3u8",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_australia.m3u8",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_zz_news_en.m3u8"
 ]
 
@@ -49,16 +48,17 @@ def parse_m3u8(contents, m3u8_dict):
 def is_m3u8_stream_live(url):
     with open("playlistIE.m3u8", 'r') as file:
         checked = file.read()
-    if "m3u" not in url.lower():
-        return False
     if url in checked:
         return False
-    try:
-        response = requests.get(url, timeout=10)
-        if response.status_code == 200 and "#EXTM3U" in response.text and "#EXTINF" in response.text:
-            return True
-        return False
-    except requests.exceptions.RequestException:
+    if ".m3u" in url.lower() or ".ts" in url.lower() or ".mpd" in url.lower():
+        try:
+            response = requests.get(url, timeout=10)
+            if response.status_code == 200:
+                return True
+            return False
+        except requests.exceptions.RequestException:
+            return False
+    else:
         return False
 
 
