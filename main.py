@@ -98,6 +98,6 @@ with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
                 print(f"{Colors.RED}{info}\n{key}\n{Colors.RESET}")
 
 try:
-    combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
+    combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8', 'playlistCA.m3u8'], 'playlist.m3u8')
 except:
     pass
