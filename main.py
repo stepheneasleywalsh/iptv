@@ -33,12 +33,12 @@ https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000
 
 def parse_m3u8(contents, m3u8_dict):
     lines = contents.splitlines()
-    for i in range(len(lines) - 1):  # Iterate through the lines
+    for i in range(len(lines) - 1):
         if lines[i].startswith("#EXTINF:"):
-            key = lines[i + 1]  # URL or key is the next line
-            value = lines[i]  # Current line with #EXTINF
-            channel_name = value.split(",")[-1].strip()  # Extract channel name
-            if channel_name:  # Ensure channel_name is not empty
+            key = lines[i + 1]
+            value = lines[i]
+            channel_name = value.split(",")[-1].strip()
+            if channel_name:
                 m3u8_dict[key] = {
                     "info": value,
                     "channel_name": channel_name
