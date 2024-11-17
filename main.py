@@ -1,4 +1,12 @@
 import requests
+global country
+
+country = "IE" # SET VPN
+
+class Colors:
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    RESET = '\033[0m'
 
 urls = [
     "https://raw.githubusercontent.com/stepheneasleywalsh/iptv/refs/heads/main/adhoc.m3u8",
@@ -45,6 +53,20 @@ def is_m3u8_stream_live(url):
     except requests.exceptions.RequestException:
         return False
 
+
+def combine_and_sort_playlists(files, output_file):
+    combined_dict = {}
+    for file in files:
+        with open(file, 'r', encoding='utf-8') as f:
+            contents = f.read()
+            parse_m3u8(contents, combined_dict)
+    sorted_items = sorted(combined_dict.items(), key=lambda x: x[1]['channel_name'].lower())
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write("#EXTM3U\n")
+        for key, value in sorted_items:
+            f.write(f"{value['info']}\n")
+            f.write(f"{key}\n")
+
 m3u8_dict = {}
 
 for url in urls:
@@ -54,22 +76,17 @@ for url in urls:
 
 sorted_m3u8_dict = dict(sorted(m3u8_dict.items(), key=lambda item: item[1]["channel_name"].lower()))
 
-with open('playlist.m3u8', 'w', encoding='utf-8') as file:
+with open('playlist'+country+'.m3u8', 'w', encoding='utf-8') as file:
     file.write("#EXTM3U\n")
     for key, value in sorted_m3u8_dict.items():
         channel_name = value["channel_name"]
         info = value["info"]
-        if "Not 24/7" not in channel_name:
-            if "geo" in info.lower() or "block" in info.lower():
-                print(f"MAYBE: {channel_name} {key}")
+        if "not 24" not in channel_name.lower():
+            if is_m3u8_stream_live(key):
+                print(f"{Colors.GREEN} {channel_name} {key} {Colors.RESET}")
                 file.write(f"{info}\n{key}\n")
             else:
-                print(f"TESTING: {channel_name} {key}")
-                if is_m3u8_stream_live(key):
-                    print(f"YES: {channel_name} {key}")
-                    file.write(f"{info}\n{key}\n")
-                else:
-                    print(f"NO: {channel_name} {key}")
-        else:
-            print(f"MAYBE: {channel_name} {key}")
-            file.write(f"{info}\n{key}\n")
+                print(f"{Colors.RED} {channel_name} {key} {Colors.RESET}")
+
+
+# combine_and_sort_playlists(['playlistIE.m3u8', 'playlistUK.m3u8', 'playlistUS.m3u8'], 'playlist.m3u8')
