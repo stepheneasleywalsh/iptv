@@ -47,10 +47,10 @@ def parse_m3u8(contents, m3u8_dict):
 
 def is_m3u8_stream_live(url):
     for p in ["playlistIE.m3u8", "playlistUK.m3u8"]:
-        with open(p, 'r') as file:
+        with open(p, 'r', encoding='utf-8') as file:
             checked = file.read()
-        if url in checked:
-            return False
+            if url in checked:
+                return False
     if ".m3u" in url.lower() or ".ts" in url.lower() or ".mpd" in url.lower():
         try:
             response = requests.get(url, timeout=10)
