@@ -64,7 +64,7 @@ with open('playlist.m3u8', 'w', encoding='utf-8') as file:
                 print(f"MAYBE: {channel_name} {key}")
                 file.write(f"{info}\n{key}\n")
             else:
-                print(f"testing: {channel_name} {key}")
+                print(f"TESTING: {channel_name} {key}")
                 if is_m3u8_stream_live(key):
                     print(f"YES: {channel_name} {key}")
                     file.write(f"{info}\n{key}\n")
