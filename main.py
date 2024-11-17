@@ -17,11 +17,11 @@ urls = [
 def fetch_page_contents(url):
     if url == "":
         return("""#EXTM3U
-#EXTINF:-1 tvg-id="CNNGO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN GO
+#EXTINF:-1 tvg-id="CNNGO.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN GO
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
-#EXTINF:-1 tvg-id="CNN576i" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN 576i
+#EXTINF:-1 tvg-id="CNN576i.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN 576i
 https://stream1.cinerama.uz/1259/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="CNNINT" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN INT
+#EXTINF:-1 tvg-id="CNNINT.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN INT
 https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8""")
     try:
         response = requests.get(url)
