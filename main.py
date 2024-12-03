@@ -32,7 +32,7 @@ def fetch_page_contents(url):
 
 def parse_m3u8(contents, m3u8_dict):
     if country == "IE":
-        C = "Region-Free"
+        C = "Free"
     else:
         C = country
     lines = contents.splitlines()
@@ -43,7 +43,7 @@ def parse_m3u8(contents, m3u8_dict):
             channel_name = value.split(",")[-1].strip()
             try:
                 old_text = r'group-title=".*?"'
-                new_text = "group-title=\"" + C + "\""
+                new_text = "group-title=Region-\"" + C + "\""
                 value = re.sub(old_text, new_text, value)
             except:
                 pass
